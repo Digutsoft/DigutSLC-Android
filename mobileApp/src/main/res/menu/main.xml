@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SLCMain">
+    <item
+        android:id="@+id/itOpen"
+        android:icon="@drawable/ic_action_open"
+        android:title="@string/open"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itSave"
+        android:icon="@drawable/ic_action_save"
+        android:title="@string/save"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itSaveAs"
+        android:title="@string/save_as"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/itFileList"
+        android:icon="@drawable/ic_action_list"
+        android:title="@string/file_list"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/itType"
+        android:title="@string/ctype"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/itShare"
+        android:title="@string/share"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/itInfo"
+        android:title="@string/info"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/itCloud"
+        android:title="@string/cloud"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DigutSLC</string>
+    <string name="input_here">Type anything!\nLength will shown in right-upper corner.</string>
+    <string name="back_again_to_exit">Press back key again to exit DigutSLC.</string>
+
+    <string name="open">Open</string>
+    <string name="save">Save</string>
+    <string name="save_as">Save As</string>
+    <string name="file_list">File List</string>
+    <string name="ctype">Check type</string>
+    <string name="share">Share</string>
+    <string name="info">Info</string>
+    <string name="cloud">DigutCloud</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+
+    <string name="new_file">New file</string>
+    <string name="info_message">Version: %s\n© Digutsoft. All Rights Reserved.</string>
+
+    <string name="ct_excepttrim">Except each side\'s spaces</string>
+    <string name="ct_exceptspace">Except space</string>
+    <string name="ct_exceptenter">Except enter</string>
+
+    <string name="open_no_file">There is no file.</string>
+    <string name="open_overwrite_ask">Your writing will be lost.\nContinue to open file?</string>
+    <string name="open_fail">Failed to open file</string>
+
+    <string name="save_done">Saved as:\n</string>
+    <string name="save_title">File name</string>
+    <string name="save_empty">Empty text can\'t be saved.</string>
+    <string name="save_fail">Failed to save file.</string>
+
+    <string name="working_local">Local file:\u0020</string>
+    <string name="working_cloud">Cloud document:\u0020</string>
+
+    <!-- FileList -->
+    <string name="file_list_menu_open">Open</string>
+    <string name="file_list_menu_rename">Rename</string>
+    <string name="file_list_menu_rename_overwrite">\'%s\' already exists.\nDo you want to overwrite the file?</string>
+    <string name="file_list_menu_rename_success">Successfully renamed file.</string>
+    <string name="file_list_menu_rename_fail">Failed to rename file!</string>
+    <string name="file_list_menu_delete">Delete</string>
+    <string name="file_list_menu_delete_ask">Are you sure you want to delete file \'%s\'?</string>
+    <string name="file_list_menu_delete_success">Successfully deleted file.</string>
+    <string name="file_list_menu_delete_fail">Failed to delete file!</string>
+    <string name="file_list_menu_upload">Upload to DigutCloud</string>
+    <string name="file_list_load_fail_title">Fail!</string>
+    <string name="file_list_load_fail_content">Failed to load file list.\nPlease try again in a minute.</string>
+    <string name="file_list_open_file_ask">Do you want to open the file \'%s\'?</string>
+
+    <!-- DigutCloud -->
+    <string name="cloud_fail">Fail!</string>
+    <string name="cloud_wait">Please wait…</string>
+
+    <string name="cloud_login_email">Digutsoft ID</string>
+    <string name="cloud_login_password">Password</string>
+    <string name="cloud_register">Sign up</string>
+
+    <string name="cloud_login">Login</string>
+    <string name="cloud_login_fail">Failed to log in!\nPlease try again in a minute.</string>
+    <string name="cloud_login_fail_wrong_id_or_pw">Wrong ID or password!\nPlease check your account info.</string>
+    <string name="cloud_login_fail_not_supported_algorithm">Your device doesn\'t support security algorithm.\nCould not login to DigutCloud.</string>
+    <string name="cloud_login_success">Logged in successfully.</string>
+
+    <string name="cloud_logout">Logout</string>
+    <string name="cloud_logout_message">Are you sure you want to log out from DigutCloud?</string>
+    <string name="cloud_logout_success">Logged out successfully.</string>
+
+    <string name="cloud_docs_new_document">New Document</string>
+    <string name="cloud_docs_empty">There is no documents in DigutCloud.</string>
+
+    <string name="cloud_err_fail_auth">Failed to authenticate your account information.\nPlease log out and log in again to re-authenticate your account.</string>
+
+    <string name="cloud_list_load_fail">Failed to get file list!</string>
+    <string name="cloud_list_load_fail_fetch_failure">Failed to fetch file list.\nPlease try again.</string>
+
+    <string name="cloud_upload_success">Successfully uploaded data.</string>
+    <string name="cloud_upload_fail">Failed to upload data!</string>
+    <string name="cloud_upload_fail_empty">Empty document can\'t be uploaded to DigutCloud.</string>
+
+    <string name="cloud_download_success">Successfully downloaded data.</string>
+    <string name="cloud_download_fail">Failed to download data!</string>
+    <string name="cloud_download_fail_not_exist">Failed to download data!\nDocument not exists on the server.</string>
+    <string name="cloud_download_fail_fetch_failure">Failed to fetch document information.\nPlease try again.</string>
+
+</resources>
