@@ -1,6 +1,6 @@
 # [DigutSLC](http://www.digutsoft.com/apps/product.php?id=slc)
 
-DigutSLC is a text length checker and a convenient text writer developed by [Digutsoft](http://www.digutosft.com/).
+DigutSLC is a text length checker and a convenient text writer developed by [Digutsoft](http://www.digutsoft.com/).
 
 Whatever you write, DigutSLC will tell you the length of the text directly.
 Also, with simple and light UI, save/load as txt file, [DigutCloud](http://www.digutsoft.com/cloud/) function,
