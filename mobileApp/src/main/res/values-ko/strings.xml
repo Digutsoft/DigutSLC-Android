@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DigutSLC</string>
+    <string name="input_here">글을 입력하세요!\n글자수는 오른쪽 상단에 나옵니다.</string>
+    <string name="back_again_to_exit">DigutSLC를 종료하려면 뒤로가기 버튼을 한 번 더 누르세요.</string>
+
+    <string name="open">열기</string>
+    <string name="save">저장</string>
+    <string name="save_as">새 파일로 저장</string>
+    <string name="file_list">파일 목록</string>
+    <string name="ctype">검사 방식</string>
+    <string name="share">공유</string>
+    <string name="info">정보</string>
+    <string name="ok">확인</string>
+    <string name="yes">예</string>
+    <string name="no">아니오</string>
+    <string name="cancel">취소</string>
+    <string name="close">닫기</string>
+
+    <string name="new_file">새 파일</string>
+    <string name="info_message">버전: %s\n© 디귿소프트. All Rights Reserved.</string>
+
+    <string name="ct_excepttrim">양쪽 공백 제외</string>
+    <string name="ct_exceptspace">공백 제외</string>
+    <string name="ct_exceptenter">엔터 제외</string>
+
+    <string name="open_no_file">파일이 없습니다.</string>
+    <string name="open_overwrite_ask">작성중인 내용이 유실됩니다.\n계속하시겠습니까?</string>
+    <string name="open_fail">파일을 열지 못했습니다.</string>
+
+    <string name="save_done">저장 완료:\n</string>
+    <string name="save_title">파일 이름</string>
+    <string name="save_empty">빈 텍스트는 저장될 수 없습니다.</string>
+    <string name="save_fail">파일을 저장하지 못했습니다.</string>
+
+    <string name="working_local">로컬 파일:\u0020</string>
+    <string name="working_cloud">Cloud 문서:\u0020</string>
+
+    <!-- FileList -->
+    <string name="file_list_menu_open">열기</string>
+    <string name="file_list_menu_rename">이름 바꾸기</string>
+    <string name="file_list_menu_rename_overwrite">\'%s\' 파일이 이미 존재합니다.\n덮어쓰시겠습니까?</string>
+    <string name="file_list_menu_rename_success">이름을 바꿨습니다.</string>
+    <string name="file_list_menu_rename_fail">이름을 바꾸지 못했습니다!</string>
+    <string name="file_list_menu_delete">삭제</string>
+    <string name="file_list_menu_delete_ask">정말 \'%s\' 파일을 삭제하시겠습니까?</string>
+    <string name="file_list_menu_delete_success">파일을 삭제했습니다.</string>
+    <string name="file_list_menu_delete_fail">파일을 삭제하지 못했습니다!</string>
+    <string name="file_list_menu_upload">DigutCloud에 업로드</string>
+    <string name="file_list_load_fail_title">실패!</string>
+    <string name="file_list_load_fail_content">파일 목록을 불러오지 못했습니다.\n잠시 후 다시 시도해주세요.</string>
+    <string name="file_list_open_file_ask">정말 \'%s\' 파일을 여시겠습니까?</string>
+
+</resources>
