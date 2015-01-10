@@ -137,10 +137,6 @@ public class SLCMain extends ActionBarActivity {
                 });
                 adbInfo.show();
                 return true;
-            case R.id.itCloud:
-                Intent intCloud = new Intent(SLCMain.this, SLCCloud.class);
-                startActivity(intCloud);
-                return true;
             default:
                 return onOptionsItemSelected(item);
         }

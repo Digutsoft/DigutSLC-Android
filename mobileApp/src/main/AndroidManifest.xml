@@ -36,10 +36,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.digutsoft.slc.SLCCloud"
-            android:label="@string/app_name"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
             android:name="com.digutsoft.slc.SLCFileList"
             android:label="@string/file_list" >
         </activity>

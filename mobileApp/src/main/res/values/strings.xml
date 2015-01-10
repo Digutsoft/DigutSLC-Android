@@ -12,7 +12,6 @@
     <string name="ctype">Check type</string>
     <string name="share">Share</string>
     <string name="info">Info</string>
-    <string name="cloud">DigutCloud</string>
     <string name="ok">OK</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
@@ -52,40 +51,5 @@
     <string name="file_list_load_fail_title">Fail!</string>
     <string name="file_list_load_fail_content">Failed to load file list.\nPlease try again in a minute.</string>
     <string name="file_list_open_file_ask">Do you want to open the file \'%s\'?</string>
-
-    <!-- DigutCloud -->
-    <string name="cloud_fail">Fail!</string>
-    <string name="cloud_wait">Please wait…</string>
-
-    <string name="cloud_login_email">Digutsoft ID</string>
-    <string name="cloud_login_password">Password</string>
-    <string name="cloud_register">Sign up</string>
-
-    <string name="cloud_login">Login</string>
-    <string name="cloud_login_fail">Failed to log in!\nPlease try again in a minute.</string>
-    <string name="cloud_login_fail_wrong_id_or_pw">Wrong ID or password!\nPlease check your account info.</string>
-    <string name="cloud_login_fail_not_supported_algorithm">Your device doesn\'t support security algorithm.\nCould not login to DigutCloud.</string>
-    <string name="cloud_login_success">Logged in successfully.</string>
-
-    <string name="cloud_logout">Logout</string>
-    <string name="cloud_logout_message">Are you sure you want to log out from DigutCloud?</string>
-    <string name="cloud_logout_success">Logged out successfully.</string>
-
-    <string name="cloud_docs_new_document">New Document</string>
-    <string name="cloud_docs_empty">There is no documents in DigutCloud.</string>
-
-    <string name="cloud_err_fail_auth">Failed to authenticate your account information.\nPlease log out and log in again to re-authenticate your account.</string>
-
-    <string name="cloud_list_load_fail">Failed to get file list!</string>
-    <string name="cloud_list_load_fail_fetch_failure">Failed to fetch file list.\nPlease try again.</string>
-
-    <string name="cloud_upload_success">Successfully uploaded data.</string>
-    <string name="cloud_upload_fail">Failed to upload data!</string>
-    <string name="cloud_upload_fail_empty">Empty document can\'t be uploaded to DigutCloud.</string>
-
-    <string name="cloud_download_success">Successfully downloaded data.</string>
-    <string name="cloud_download_fail">Failed to download data!</string>
-    <string name="cloud_download_fail_not_exist">Failed to download data!\nDocument not exists on the server.</string>
-    <string name="cloud_download_fail_fetch_failure">Failed to fetch document information.\nPlease try again.</string>
 
 </resources>

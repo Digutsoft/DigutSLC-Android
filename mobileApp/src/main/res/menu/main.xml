@@ -34,8 +34,4 @@
         android:id="@+id/itInfo"
         android:title="@string/info"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/itCloud"
-        android:title="@string/cloud"
-        app:showAsAction="never" />
 </menu>
