@@ -37,7 +37,7 @@
         </activity>
         <activity
             android:name="com.digutsoft.slc.SLCFileList"
-            android:label="@string/file_list"></activity>
+            android:label="@string/file_list" />
     </application>
 
 </manifest>
