@@ -8,7 +8,7 @@ android {
         minSdkVersion 9
         targetSdkVersion 21
         versionCode 1503
-        versionName "15.03 OC13aMC"
+        versionName "15.03 OC13cMR"
     }
 }
 

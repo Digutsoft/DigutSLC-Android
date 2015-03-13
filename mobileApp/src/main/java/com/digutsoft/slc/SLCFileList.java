@@ -67,8 +67,7 @@ public class SLCFileList extends ActionBarActivity {
                 adbFileOptions.setItems(new String[]{
                         getString(R.string.file_list_menu_open),
                         getString(R.string.file_list_menu_rename),
-                        getString(R.string.file_list_menu_delete),
-                        getString(R.string.file_list_menu_upload)
+                        getString(R.string.file_list_menu_delete)
                 }, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -175,9 +174,6 @@ public class SLCFileList extends ActionBarActivity {
                                     }
                                 });
                                 adbDelete.show();
-                                break;
-                            case 3:
-                                //TODO: upload to DigutCloud
                                 break;
                         }
                     }
