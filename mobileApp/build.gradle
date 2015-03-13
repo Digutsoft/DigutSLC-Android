@@ -2,17 +2,13 @@ apply plugin: "com.android.application"
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.1"
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         minSdkVersion 9
         targetSdkVersion 21
-        versionCode 1501
-        versionName "15.01 OA08cMD"
-    }
-    buildTypes {
-        release {
-        }
+        versionCode 1503
+        versionName "15.03 OC13aMC"
     }
 }
 
