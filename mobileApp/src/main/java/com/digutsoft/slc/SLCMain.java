@@ -80,7 +80,7 @@ public class SLCMain extends ActionBarActivity {
             openFile(mLoadedFileName);
         }
 
-        mCheckType = sharedPreferences.getInt("checkType", 1);
+        mCheckType = sharedPreferences.getInt("checkType", 0);
 
         File slcDirectory = new File(Environment.getExternalStorageDirectory() + "/DigutSLC/");
         if (!slcDirectory.exists()) {
