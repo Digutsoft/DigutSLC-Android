@@ -40,13 +40,15 @@ public class SLCMain extends ActionBarActivity {
 
     SharedPreferences sharedPreferences;
 
+    TextView tvLength;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
 
-        final TextView tvLength = (TextView) findViewById(R.id.tvLength);
+        tvLength = (TextView) findViewById(R.id.tvLength);
 
         tvFileName = (TextView) findViewById(R.id.tvFileName);
 
@@ -62,7 +64,7 @@ public class SLCMain extends ActionBarActivity {
 
             @Override
             public void onTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {
-                tvLength.setText(Integer.toString(checkLength()));
+                checkLengthAndDisplay();
             }
         });
 
@@ -150,6 +152,10 @@ public class SLCMain extends ActionBarActivity {
         } else {
             finish();
         }
+    }
+
+    private void checkLengthAndDisplay() {
+        tvLength.setText(Integer.toString(checkLength()));
     }
 
     private int checkLength() {
@@ -325,7 +331,7 @@ public class SLCMain extends ActionBarActivity {
 
                 sharedPreferences.edit().putInt("checkType", checkType).apply();
                 mCheckType = checkType;
-                checkLength();
+                checkLengthAndDisplay();
             }
         });
         adbCheckType.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
@@ -355,7 +361,7 @@ public class SLCMain extends ActionBarActivity {
 
             if(isFileLoadMode) isFileLoadMode = false;
 
-            checkLength();
+            checkLengthAndDisplay();
         } catch (IOException e) {
             Toast.makeText(SLCMain.this, getString(R.string.open_fail), Toast.LENGTH_SHORT).show();
         }
@@ -377,7 +383,6 @@ public class SLCMain extends ActionBarActivity {
             tvFileName.setText(getString(R.string.working_local) + mLoadedFileName);
             Toast.makeText(SLCMain.this, getString(R.string.save_done) + fileName, Toast.LENGTH_SHORT).show();
         } catch (IOException e) {
-            e.printStackTrace();
             Toast.makeText(SLCMain.this, getString(R.string.save_fail), Toast.LENGTH_SHORT).show();
         }
     }
