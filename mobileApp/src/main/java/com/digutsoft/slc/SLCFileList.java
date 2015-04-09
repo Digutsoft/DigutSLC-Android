@@ -216,9 +216,10 @@ public class SLCFileList extends ActionBarActivity {
                     String name = file.getName();
                     alFileList.add(name);
                 }
-                ArrayAdapter<String> aaFileList = new ArrayAdapter<>(SLCFileList.this, android.R.layout.simple_list_item_1, alFileList);
-                lvFileList.setAdapter(aaFileList);
             }
+            ArrayAdapter<String> aaFileList = new ArrayAdapter<>(SLCFileList.this, android.R.layout.simple_list_item_1, alFileList);
+            lvFileList.setAdapter(aaFileList);
+            aaFileList.notifyDataSetChanged();
         } catch (NullPointerException e) {
             AlertDialog.Builder adbFileOpenFail = new AlertDialog.Builder(SLCFileList.this);
             adbFileOpenFail.setTitle(R.string.file_list_load_fail_title);
