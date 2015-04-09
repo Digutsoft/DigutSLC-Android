@@ -24,7 +24,7 @@
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/itType"
-        android:title="@string/ctype"
+        android:title="@string/check_option"
         app:showAsAction="never" />
     <item
         android:id="@+id/itShare"

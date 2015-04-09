@@ -9,7 +9,7 @@
     <string name="save">Save</string>
     <string name="save_as">Save As</string>
     <string name="file_list">File List</string>
-    <string name="ctype">Check type</string>
+    <string name="check_option">Check Option</string>
     <string name="share">Share</string>
     <string name="info">Info</string>
     <string name="ok">OK</string>
@@ -21,9 +21,9 @@
     <string name="new_file">New file</string>
     <string name="info_message">Version: %s\n© Digutsoft. All Rights Reserved.</string>
 
-    <string name="ct_excepttrim">Except each side\'s spaces</string>
-    <string name="ct_exceptspace">Except space</string>
-    <string name="ct_exceptenter">Except enter</string>
+    <string name="check_option_except_space">Except space</string>
+    <string name="check_option_except_enter">Except enter</string>
+    <string name="check_option_except_trim">Except each side\'s spaces</string>
 
     <string name="open_no_file">There is no file.</string>
     <string name="open_overwrite_ask">Your writing will be lost.\nContinue to open file?</string>

@@ -274,13 +274,13 @@ public class SLCMain extends ActionBarActivity {
 
     private void mnCheckType() {
         final CharSequence[] csMenuItems = {
-                getString(R.string.ct_exceptspace),
-                getString(R.string.ct_exceptenter),
-                getString(R.string.ct_excepttrim)};
+                getString(R.string.check_option_except_space),
+                getString(R.string.check_option_except_enter),
+                getString(R.string.check_option_except_trim)};
         final boolean[] bState = {(mCheckType & 0b001) == 0b001, (mCheckType & 0b010) == 0b010, (mCheckType & 0b100) == 0b100};
 
         AlertDialog.Builder adbCheckType = new AlertDialog.Builder(SLCMain.this);
-        adbCheckType.setTitle(R.string.ctype);
+        adbCheckType.setTitle(R.string.check_option);
         adbCheckType.setMultiChoiceItems(csMenuItems, bState, new DialogInterface.OnMultiChoiceClickListener() {
             public void onClick(DialogInterface dialogInterface, int item, boolean state) {
             }

@@ -9,7 +9,7 @@
     <string name="save">저장</string>
     <string name="save_as">새 파일로 저장</string>
     <string name="file_list">파일 목록</string>
-    <string name="ctype">검사 방식</string>
+    <string name="check_option">검사 방식</string>
     <string name="share">공유</string>
     <string name="info">정보</string>
     <string name="ok">확인</string>
@@ -21,9 +21,9 @@
     <string name="new_file">새 파일</string>
     <string name="info_message">버전: %s\n© 디귿소프트. All Rights Reserved.</string>
 
-    <string name="ct_excepttrim">양쪽 공백 제외</string>
-    <string name="ct_exceptspace">공백 제외</string>
-    <string name="ct_exceptenter">엔터 제외</string>
+    <string name="check_option_except_space">공백 제외</string>
+    <string name="check_option_except_enter">엔터 제외</string>
+    <string name="check_option_except_trim">양쪽 공백 제외</string>
 
     <string name="open_no_file">파일이 없습니다.</string>
     <string name="open_overwrite_ask">작성중인 내용이 유실됩니다.\n계속하시겠습니까?</string>
