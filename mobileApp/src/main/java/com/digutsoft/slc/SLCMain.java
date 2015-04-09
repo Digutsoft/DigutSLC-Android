@@ -273,48 +273,11 @@ public class SLCMain extends ActionBarActivity {
     }
 
     private void mnCheckType() {
-        boolean bExceptSpace = false;
-        boolean bExceptEnter = false;
-        boolean bExceptTrim = false;
-
-        switch (mCheckType) {
-            case 0:
-                break;
-            case 1:
-                bExceptSpace = true;
-                break;
-            case 2:
-                bExceptEnter = true;
-                break;
-            case 3:
-                bExceptSpace = true;
-                bExceptEnter = true;
-                break;
-            case 4:
-                bExceptTrim = true;
-                break;
-            case 5:
-                bExceptSpace = true;
-                bExceptTrim = true;
-                break;
-            case 6:
-                bExceptEnter = true;
-                bExceptTrim = true;
-                break;
-            case 7:
-                bExceptSpace = true;
-                bExceptEnter = true;
-                bExceptTrim = true;
-                break;
-            default:
-                break;
-        }
-
         final CharSequence[] csMenuItems = {
                 getString(R.string.ct_exceptspace),
                 getString(R.string.ct_exceptenter),
                 getString(R.string.ct_excepttrim)};
-        final boolean[] bState = {bExceptSpace, bExceptEnter, bExceptTrim};
+        final boolean[] bState = {(mCheckType & 0b001) == 0b001, (mCheckType & 0b010) == 0b010, (mCheckType & 0b100) == 0b100};
 
         AlertDialog.Builder adbCheckType = new AlertDialog.Builder(SLCMain.this);
         adbCheckType.setTitle(R.string.ctype);
@@ -327,9 +290,9 @@ public class SLCMain extends ActionBarActivity {
                 SparseBooleanArray sbaValue = ((AlertDialog) dialog).getListView().getCheckedItemPositions();
 
                 int checkType = 0;
-                if (sbaValue.get(0)) checkType += 1;
-                if (sbaValue.get(1)) checkType += 2;
-                if (sbaValue.get(2)) checkType += 4;
+                if (sbaValue.get(0)) checkType += 0b001;
+                if (sbaValue.get(1)) checkType += 0b010;
+                if (sbaValue.get(2)) checkType += 0b100;
 
                 sharedPreferences.edit().putInt("checkType", checkType).apply();
                 mCheckType = checkType;
