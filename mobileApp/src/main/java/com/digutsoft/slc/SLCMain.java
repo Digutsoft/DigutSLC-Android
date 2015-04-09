@@ -150,6 +150,7 @@ public class SLCMain extends ActionBarActivity {
             mBackKeyPressedTime = System.currentTimeMillis();
             Toast.makeText(SLCMain.this, R.string.back_again_to_exit, Toast.LENGTH_LONG).show();
         } else {
+            mLoadedFileName = null;
             finish();
         }
     }
