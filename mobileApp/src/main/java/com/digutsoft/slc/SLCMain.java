@@ -14,6 +14,7 @@ import android.text.TextWatcher;
 import android.util.SparseBooleanArray;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,6 +25,7 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -41,6 +43,7 @@ public class SLCMain extends ActionBarActivity {
     SharedPreferences sharedPreferences;
 
     TextView tvLength;
+    boolean mByteMode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +52,13 @@ public class SLCMain extends ActionBarActivity {
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
 
         tvLength = (TextView) findViewById(R.id.tvLength);
+        tvLength.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mByteMode = !mByteMode;
+                checkLengthAndDisplay();
+            }
+        });
 
         tvFileName = (TextView) findViewById(R.id.tvFileName);
 
@@ -78,7 +88,7 @@ public class SLCMain extends ActionBarActivity {
             etTextBox.setText(getIntent().getStringExtra("slcLoadedText"));
         }
 
-        if(isFileLoadMode) {
+        if (isFileLoadMode) {
             openFile(mLoadedFileName);
         }
 
@@ -157,7 +167,11 @@ public class SLCMain extends ActionBarActivity {
     }
 
     private void checkLengthAndDisplay() {
-        tvLength.setText(Integer.toString(checkLength()));
+        if (mByteMode) {
+            tvLength.setText(Integer.toString(checkByteLength()) + "bytes");
+        } else {
+            tvLength.setText(Integer.toString(checkLength()));
+        }
     }
 
     private int checkLength() {
@@ -178,6 +192,29 @@ public class SLCMain extends ActionBarActivity {
                 return etTextBox.getText().toString().replace("\n", "").trim().length();
             case 7:
                 return etTextBox.getText().toString().replace(" ", "").replace("\n", "").trim().length();
+            default:
+                return -1;
+        }
+    }
+
+    private int checkByteLength() {
+        switch (mCheckType) {
+            case 0:
+                return etTextBox.getText().toString().getBytes().length;
+            case 1:
+                return etTextBox.getText().toString().replace(" ", "").getBytes().length;
+            case 2:
+                return etTextBox.getText().toString().replace("\n", "").getBytes().length;
+            case 3:
+                return etTextBox.getText().toString().replace(" ", "").replace("\n", "").getBytes().length;
+            case 4:
+                return etTextBox.getText().toString().trim().getBytes().length;
+            case 5:
+                return etTextBox.getText().toString().replace(" ", "").trim().getBytes().length;
+            case 6:
+                return etTextBox.getText().toString().replace("\n", "").trim().getBytes().length;
+            case 7:
+                return etTextBox.getText().toString().replace(" ", "").replace("\n", "").trim().getBytes().length;
             default:
                 return -1;
         }
@@ -324,7 +361,7 @@ public class SLCMain extends ActionBarActivity {
             tvFileName.setText(getString(R.string.working_local) + mLoadedFileName);
             etTextBox.setText(sbOpeningFileContent);
 
-            if(isFileLoadMode) isFileLoadMode = false;
+            if (isFileLoadMode) isFileLoadMode = false;
 
             checkLengthAndDisplay();
         } catch (IOException e) {

@@ -19,7 +19,7 @@
     <string name="close">Close</string>
 
     <string name="new_file">New file</string>
-    <string name="info_message">Version: %s\n© Digutsoft. All Rights Reserved.</string>
+    <string name="info_message">Byte calculation follows UTF-8 encoding.\n\nVersion: %s\n© Digutsoft. All Rights Reserved.</string>
 
     <string name="check_option_except_space">Except space</string>
     <string name="check_option_except_enter">Except enter</string>

@@ -19,7 +19,7 @@
     <string name="close">닫기</string>
 
     <string name="new_file">새 파일</string>
-    <string name="info_message">버전: %s\n© 디귿소프트. All Rights Reserved.</string>
+    <string name="info_message">바이트 계산은 UTF-8 인코딩을 따릅니다.\n\n버전: %s\n© 디귿소프트. All Rights Reserved.</string>
 
     <string name="check_option_except_space">공백 제외</string>
     <string name="check_option_except_enter">엔터 제외</string>
